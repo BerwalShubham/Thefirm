@@ -18,7 +18,7 @@ const Herosec = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy.
               </p>
-              <button className="btn-get-in-touch fw-bold mt-4 mx-auto mx-lg-0">
+              <button className="btn-yellow fw-bold mt-4 mx-auto mx-lg-0">
                 Get in Touch
               </button>
             </div>

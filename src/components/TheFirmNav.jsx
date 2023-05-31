@@ -72,11 +72,11 @@ const TheFirmNav = () => {
                   Contact Us
                 </a>
               </li>
-              <button className="btn-get-in-touch fw-bold mx-auto mx-lg-0 d-md-none">
+              <button className="btn-yellow fw-bold mx-auto mx-lg-0 d-md-none">
                 Get in Touch
               </button>
             </ul>
-            <button className="btn-get-in-touch fw-bold mx-auto mx-lg-0 d-none d-md-block">
+            <button className="btn-yellow fw-bold mx-auto mx-lg-0 d-none d-md-block">
               Get in Touch
             </button>
             <div className="text-end d-xl-none">
