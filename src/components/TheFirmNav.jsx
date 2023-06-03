@@ -21,7 +21,7 @@ const TheFirmNav = () => {
               className={
                 nav
                   ? "nav-hidden d-flex align-items-center justify-content-lg-end gap-4 py-2 mb-0"
-                  : "nav-open d-xl-none p-0 gap-5"
+                  : "nav-open p-0 gap-4"
               }
             >
               <li className="px-lg-1 px-xxl-0">

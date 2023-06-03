@@ -5,8 +5,8 @@ import ellipse from "../assets/svg/Ellipse.svg";
 
 const Herosec = () => {
   return (
-    <section className="bg-img position-relative overflow_hidden">
-      <Container className="position-relative">
+    <section className="bg-img flex-grow-1 d-flex flex-column align-items-center justify-content-center position-relative overflow_hidden">
+      <Container className="hero-sec-container">
         <Row className="flex-column-reverse flex-lg-row">
           <Col className="position-relative" lg={7}>
             <img className="ellipse" src={ellipse} alt="elipse" />
@@ -15,8 +15,9 @@ const Herosec = () => {
                 Get Bussiness <br /> Solutions with TheFirm.
               </h1>
               <p className="ff-lora fs-xsm pt-4">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy.
+                Lorem Ipsum is simply dummy text of the printing and <br />
+                typesetting industry. Lorem Ipsum has <br /> been the industry's
+                standard dummy.
               </p>
               <button className="btn-yellow fw-bold mt-4 mx-auto mx-lg-0">
                 Get in Touch

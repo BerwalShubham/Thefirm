@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@700;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@400;700;900&display=swap");
 * {
   text-decoration: none !important;
   list-style-type: none !important;
@@ -21,7 +20,9 @@
   cursor: pointer;
 }
 :root {
+  --fs-xxsm: 12px;
   --fs-xsm: 14px;
+  --fs-sm: 17px;
   --fs-md: 20px;
   --fs-lg: 24px;
   --fs-xl: 36px;
@@ -32,8 +33,23 @@
 }
 /* ----- */
 /* FONT SIZE */
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-xxsm {
+  font-size: var(--fs-xxsm);
+}
 .fs-xsm {
   font-size: var(--fs-xsm);
+}
+.fs-sm {
+  font-size: var(--fs-sm);
 }
 .fs-md {
   font-size: var(--fs-md);
@@ -44,6 +60,7 @@
 .fs-xl {
   font-size: var(--fs-xl);
 }
+
 /* ------ */
 
 /* COLOR */
@@ -56,10 +73,26 @@
 .color-black {
   color: #1e1e1e;
 }
+.color-grey-3 {
+  color: #b0b0b0;
+}
+.color-grey {
+  color: #a5a5a5;
+}
+.bg-off-white {
+  background-color: #fbfbfb;
+}
+/* ----- */
+/* PADDING */
+.ps-x {
+  padding-left: 12px;
+}
 /* ----- */
 @media (min-width: 992px) {
   :root {
+    --fs-xxsm: 17px;
     --fs-xsm: 18px;
+    --fs-sm: 24px;
     --fs-md: 30px;
     --fs-lg: 44px;
     --fs-xl: 48px;
