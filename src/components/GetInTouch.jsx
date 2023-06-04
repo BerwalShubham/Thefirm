@@ -32,17 +32,20 @@ const GetInTouch = () => {
               </label>
               <input className="form-input" type="text" />
             </div>
-            <div className="d-flex flex-column mt-5 mt-sm-0">
-              <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
-                Subject
-              </label>
-              <select className="form-select pt-1 pb-2 cursor-pointer">
-                <option disabled selected hidden>
-                  Choose your subject
-                </option>
-                <option value="">Research</option>
-                <option value="">Data Analytics</option>
-              </select>
+            <div className="d-flex flex-column">
+              <div className="d-flex flex-column mt-5 mt-sm-0">
+                <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
+                  Subject
+                </label>
+                <select className="form-select pt-1 pb-2 cursor-pointer ff-nunito fw-bold fs-xsm">
+                  <option disabled selected hidden>
+                    Choose your subject
+                  </option>
+                  <option value="">Research</option>
+                  <option value="">Data Analytics</option>
+                </select>
+              </div>
+              <div className="hr-line-2"></div>
             </div>
           </div>
           <div className="text-center mt-5 pt-4">

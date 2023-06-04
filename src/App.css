@@ -772,6 +772,12 @@
   width: 250px;
   border-bottom: 2px solid #a5a5a5 !important;
 }
+.hr-line-2 {
+  max-width: 352px;
+  height: 2px;
+  background-color: #a5a5a5;
+  border: 1px solid #a5a5a5;
+}
 .form-select {
   overflow: hidden;
   overflow: -moz-hidden-unscrollable;
@@ -785,7 +791,6 @@
   cursor: pointer;
   width: 250px !important;
   border-radius: none !important;
-  border-bottom: 2px solid #a5a5a5 !important;
   transition: none !important;
 }
 /* ----- */
@@ -933,10 +938,10 @@
   .heroimg {
     position: absolute;
     max-width: 700px;
-    right: 0%;
+    right: -13%;
     transform: translateX(11px);
     z-index: -1;
-    top: 14%;
+    top: 0%;
     border-radius: 37px;
     filter: drop-shadow(8px 9px 19px rgba(0, 0, 0, 0.2));
   }
@@ -992,7 +997,7 @@
 @media (min-width: 1200px) {
   .heroimg {
     max-width: 700px;
-    top: 0;
+    top: 18%;
     right: 0%;
     transform: translateX(11px);
   }
@@ -1088,6 +1093,7 @@
   .heroimg {
     max-width: 852px;
     right: 0%;
+    top: 15%;
     transform: translateX(11px);
   }
   .text-bg-color {
