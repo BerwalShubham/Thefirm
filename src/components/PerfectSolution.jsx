@@ -5,23 +5,65 @@ import seo from "../assets/svg/seo.svg";
 import digitalpartner from "../assets/svg/digitalpartner.svg";
 import bglogo from "../assets/svg/bglogo.svg";
 import bussinesssolu from "../assets/png/perfectsolutionimg.png";
+import Slider from "react-slick";
 
 const PerfectSolution = () => {
+  var settings = {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          infinite: true,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  };
   return (
-    <section className="py-5">
+    <section className="py-5 sec-perfect-solution">
       <Container>
+        <Slider className="p-5 d-md-none" {...settings}>
+          <div className="solution-sec-img-box text-center d-flex flex-column align-items-center justify-content-center py-5">
+            <img width={102} src={coaching} alt="coaching" />
+            <h4 className="ff-nunito fs-md fw-bold pt-4 mt-2">Coaching</h4>
+            <p className="ff-lora fs-xsm pt-2">
+              Loren rasion gravida auem is bibenua tase
+            </p>
+          </div>
+          <div className="solution-sec-img-box text-center d-flex flex-column align-items-center justify-content-center py-5 ms-md-4">
+            <img width={102} src={seo} alt="seo" />
+            <h4 className="ff-nunito fs-md fw-bold pt-4 mt-2">SEO</h4>
+            <p className="ff-lora fs-xsm pt-2">
+              Loren rasion gravida auem is bibenua tase
+            </p>
+          </div>
+          <div className="solution-sec-img-box text-center d-flex flex-column align-items-center justify-content-center py-5">
+            <img width={102} src={digitalpartner} alt="digitalpartner" />
+            <h4 className="ff-nunito fs-md fw-bold pt-4 mt-2">
+              Digital Partner
+            </h4>
+            <p className="ff-lora fs-xsm pt-2">
+              Loren rasion gravida auem is bibenua tase
+            </p>
+          </div>
+        </Slider>
         <Row className="align-items-center">
           <Col xl={7} className="position-relative">
-            <img
-              className="w-100 d-md-none"
-              src={bussinesssolu}
-              alt="bussinesssolutions"
-            />
-            <div className="yellow-ellipse"></div>
-            <div className="yellow-ellipse yellow-ellipse-2"></div>
-            <div className="grey-ellipse"></div>
-            <div className="grey-ellipse grey-ellipse-2 d-none d-sm-block"></div>
-            <div className="grey-ellipse grey-ellipse-3"></div>
+            <div className="yellow-ellipse d-none d-md-block"></div>
+            <div className="yellow-ellipse yellow-ellipse-2 d-none d-md-block"></div>
+            <div className="grey-ellipse d-none d-md-block"></div>
+            <div className="grey-ellipse grey-ellipse-2 d-none d-sm-block d-none d-md-block"></div>
+            <div className="grey-ellipse grey-ellipse-3 d-none d-md-block"></div>
             <img
               className="bg-logo d-none d-sm-block"
               src={bglogo}
