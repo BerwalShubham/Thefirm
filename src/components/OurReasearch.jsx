@@ -47,7 +47,7 @@ const OurReasearch = () => {
         </div>
         <Slider {...settings} className="mt-5 pt-lg-5">
           <div className="row text-center text-lg-start flex-column-reverse flex-xl-row research px-md-5 ms-lg-1">
-            <div className="col-xl-6">
+            <div className="col-xl-6 pt-5">
               <h3 className="ff-nunito fw-bold fs-md">Lorem Ipsum is simply</h3>
               <p className="ff-lora fs-xsm pt-2 pe-lg-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting

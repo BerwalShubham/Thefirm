@@ -18,7 +18,7 @@ const FrustrationOfClients = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s,
             </p>
-            <div>
+            <div className="ms-4">
               <div className="d-flex align-items-center gap-2 mt-3">
                 <img
                   width={14}

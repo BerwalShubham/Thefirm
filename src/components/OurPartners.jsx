@@ -34,6 +34,8 @@ const OurPartners = () => {
         settings: {
           slidesToShow: 2,
           infinite: true,
+          arrows: false,
+          dots: true,
         },
       },
       {
@@ -54,7 +56,7 @@ const OurPartners = () => {
           Our <span className="position-relative text-partner"> Partner</span>
         </h2>
         <Slider className="ps-x mt-5" {...settings}>
-          <div className="ms-2 ps-sm-1 px-5 ms-md-4">
+          <div className="ms-sm-2 px-4">
             <div className="logos-bg d-flex align-items-center justify-content-center">
               <img
                 className="logos windows-logo"
@@ -63,24 +65,29 @@ const OurPartners = () => {
               />
             </div>
           </div>
-          <div className="ms-2 ps-sm-1 px-5 ms-md-4">
+          <div className="ms-sm-2 px-4">
             <div className="logos-bg d-flex align-items-center justify-content-center">
               <img className="logos" src={google} alt="WindowsLogo" />
             </div>
           </div>
-          <div className="ms-2 ps-sm-1 px-5 ms-md-4">
+          <div className="ms-sm-2 px-4">
             <div className="logos-bg d-flex align-items-center justify-content-center">
-              <img className="logos" src={firefox} alt="WindowsLogo" />
+              <img className="logos" src={firefox} alt="firefoxlogo" />
             </div>
           </div>
-          <div className="ms-2 ps-sm-1 px-5 ms-md-4">
+          <div className="ms-sm-2 px-4">
             <div className="logos-bg d-flex align-items-center justify-content-center">
-              <img className="logos" src={safari} alt="WindowsLogo" />
+              <img className="logos" src={safari} alt="safarilogo" />
             </div>
           </div>
-          <div className="ms-2 ps-sm-1 px-5 ms-md-4">
+          <div className="ms-sm-2 px-4">
             <div className="logos-bg d-flex align-items-center justify-content-center">
-              <img className="logos" src={firefox} alt="WindowsLogo" />
+              <img className="logos" src={firefox} alt="firefoxlogo" />
+            </div>
+          </div>
+          <div className="ms-sm-2 px-4">
+            <div className="logos-bg d-flex align-items-center justify-content-center">
+              <img className="logos" src={safari} alt="safarilogo" />
             </div>
           </div>
         </Slider>

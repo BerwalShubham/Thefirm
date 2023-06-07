@@ -15,9 +15,11 @@ const Herosec = () => {
                 Get Bussiness <br /> Solutions with TheFirm.
               </h1>
               <p className="ff-lora fs-xsm pt-4">
-                Lorem Ipsum is simply dummy text of the printing and <br />
-                typesetting industry. Lorem Ipsum has <br /> been the industry's
-                standard dummy.
+                Lorem Ipsum is simply dummy text of the printing and
+                <br className="d-none d-sm-block" />
+                typesetting industry. Lorem Ipsum has{" "}
+                <br className="d-none d-sm-block" />
+                been the industry's standard dummy.
               </p>
               <button className="btn-yellow fw-bold mt-4 mx-auto mx-lg-0">
                 Get in Touch

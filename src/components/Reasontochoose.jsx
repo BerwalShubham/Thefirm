@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import arrow from "../assets/svg/arrow.svg";
-import yellowarrow from "../assets/svg/yellowarrow.svg";
 import brandimg from "../assets/png/brandimg.png";
 import speaker from "../assets/svg/speaker.svg";
 import searchlogo from "../assets/png/searchlogo.png";
@@ -18,8 +16,8 @@ const Reasontochoose = () => {
             Reason to Choose
             <span className="position-relative text-us"> Us</span>
           </h2>
-          <div className="px-lg-5">
-            <p className="ff-lora fs-xsm px-md-5">
+          <div className="px-lg-5 mx-md-4">
+            <p className="ff-lora fs-xsm px-md-5 mx-md-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -31,115 +29,195 @@ const Reasontochoose = () => {
         <div className="tasks-tabs-box d-flex align-items-center justify-content-lg-evenly gap-5 mt-5">
           <div
             onClick={() => settasktab(2)}
-            className={
-              tasktab === 2
-                ? "tasks-box-2 d-flex align-items-center justify-content-center cursor position-relative ms-5"
-                : "tasks-box d-flex align-items-center justify-content-center cursor position-relative ms-5"
-            }
+            className="d-flex align-items-center cursor"
           >
-            <img
-              className={tasktab === 2 ? "d-none" : "arrow"}
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className={tasktab === 2 ? "yellowarrow" : "d-none"}
-              src={yellowarrow}
-              alt="arrow"
-            />
-            <p
+            <svg
+              width="41"
+              height="22"
+              viewBox="0 0 41 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                className={tasktab === 2 ? "arrow" : "arrow-2"}
+                x1="41"
+                y1="10"
+                x2="22"
+                y2="10"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+              <circle
+                className={tasktab === 2 ? "arrow" : "arrow-2"}
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#F7F7F7"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+            </svg>
+            <div
               className={
                 tasktab === 2
-                  ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
-                  : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                  ? "tasks-box-2 d-flex align-items-center justify-content-center "
+                  : "tasks-box d-flex align-items-center justify-content-center cursor"
               }
             >
-              Market Research
-            </p>
+              <p
+                className={
+                  tasktab === 2
+                    ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
+                    : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                }
+              >
+                Market Research
+              </p>
+            </div>
           </div>
           <div
             onClick={() => settasktab(1)}
-            className={
-              tasktab === 1
-                ? "tasks-box-2 d-flex align-items-center justify-content-center cursor position-relative mx-3"
-                : "tasks-box d-flex align-items-center justify-content-center cursor position-relative mx-3"
-            }
+            className="d-flex align-items-center cursor"
           >
-            <img
-              className={tasktab === 1 ? "d-none" : "arrow"}
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className={tasktab === 1 ? "yellowarrow" : "d-none"}
-              src={yellowarrow}
-              alt="arrow"
-            />
-            <p
+            <svg
+              width="41"
+              height="22"
+              viewBox="0 0 41 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                className={tasktab === 1 ? "arrow" : "arrow-2"}
+                x1="41"
+                y1="10"
+                x2="22"
+                y2="10"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+              <circle
+                className={tasktab === 1 ? "arrow" : "arrow-2"}
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#F7F7F7"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+            </svg>
+            <div
               className={
                 tasktab === 1
-                  ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
-                  : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                  ? "tasks-box-2 d-flex align-items-center justify-content-center "
+                  : "tasks-box d-flex align-items-center justify-content-center cursor"
               }
             >
-              Branding
-            </p>
+              <p
+                className={
+                  tasktab === 1
+                    ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
+                    : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                }
+              >
+                Branding
+              </p>
+            </div>
           </div>
           <div
             onClick={() => settasktab(3)}
-            className={
-              tasktab === 3
-                ? "tasks-box-2 d-flex align-items-center justify-content-center cursor position-relative mx-3"
-                : "tasks-box d-flex align-items-center justify-content-center cursor position-relative mx-3"
-            }
+            className="d-flex align-items-center cursor"
           >
-            <img
-              className={tasktab === 3 ? "d-none" : "arrow"}
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className={tasktab === 3 ? "yellowarrow" : "d-none"}
-              src={yellowarrow}
-              alt="arrow"
-            />
-            <p
+            <svg
+              width="41"
+              height="22"
+              viewBox="0 0 41 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                className={tasktab === 3 ? "arrow" : "arrow-2"}
+                x1="41"
+                y1="10"
+                x2="22"
+                y2="10"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+              <circle
+                className={tasktab === 3 ? "arrow" : "arrow-2"}
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#F7F7F7"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+            </svg>
+            <div
               className={
                 tasktab === 3
-                  ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
-                  : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                  ? "tasks-box-2 d-flex align-items-center justify-content-center "
+                  : "tasks-box d-flex align-items-center justify-content-center cursor"
               }
             >
-              Reporting
-            </p>
+              <p
+                className={
+                  tasktab === 3
+                    ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
+                    : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                }
+              >
+                Reporting
+              </p>
+            </div>
           </div>
           <div
             onClick={() => settasktab(4)}
-            className={
-              tasktab === 4
-                ? "tasks-box-2 d-flex align-items-center justify-content-center cursor position-relative mx-3"
-                : "tasks-box d-flex align-items-center justify-content-center cursor position-relative mx-3"
-            }
+            className="d-flex align-items-center cursor"
           >
-            <img
-              className={tasktab === 4 ? "d-none" : "arrow"}
-              src={arrow}
-              alt="arrow"
-            />
-            <img
-              className={tasktab === 4 ? "yellowarrow" : "d-none"}
-              src={yellowarrow}
-              alt="arrow"
-            />
-            <p
+            <svg
+              width="41"
+              height="22"
+              viewBox="0 0 41 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                className={tasktab === 4 ? "arrow" : "arrow-2"}
+                x1="41"
+                y1="10"
+                x2="22"
+                y2="10"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+              <circle
+                className={tasktab === 4 ? "arrow" : "arrow-2"}
+                cx="11"
+                cy="11"
+                r="10"
+                fill="#F7F7F7"
+                stroke="#F7F7F7"
+                stroke-width="2"
+              />
+            </svg>
+            <div
               className={
                 tasktab === 4
-                  ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
-                  : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                  ? "tasks-box-2 d-flex align-items-center justify-content-center "
+                  : "tasks-box d-flex align-items-center justify-content-center cursor"
               }
             >
-              Data Analysis
-            </p>
+              <p
+                className={
+                  tasktab === 4
+                    ? "mb-0 ff-nunito fw-bold fs-xsm text-white"
+                    : "mb-0 ff-nunito fw-bold fs-xsm color-grey-2"
+                }
+              >
+                Data Analysis
+              </p>
+            </div>
           </div>
         </div>
         <div className="tasks-info-box-bg p-lg-5 mt-5">

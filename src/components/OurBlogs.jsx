@@ -10,11 +10,11 @@ const OurBlogs = () => {
         <h2 className="text-center ff-nunito fs-lg fw-black">
           Our <span className="text-blogs position-relative"> Blogs</span>
         </h2>
-        <Row>
+        <Row className="justify-content-center mt-3">
           {cards.map((val, id) => {
             return (
               <div key={id} className="col-xl-4 col-md-6">
-                <div className="our-blogs-cards p-2 mt-5 mx-auto">
+                <div className="our-blogs-cards p-2 mt-3 mx-auto">
                   <img className="w-100" src={val.img} alt="people-gatherd" />
                   <div className="px-2 mt-3">
                     <h4 className="ff-nunito fw-bold fs-sm">{val.heading}</h4>

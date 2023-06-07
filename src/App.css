@@ -186,6 +186,16 @@
   opacity: 1 !important;
   color: #f6f6f6 !important;
 }
+.sec-our-partner .slick-dots {
+  top: 110%;
+}
+.sec-our-partner .slick-dots li button:before {
+  font-size: 16px;
+  color: #faca10;
+}
+.sec-our-partner .slick-dots li.slick-active button:before {
+  color: #faca10;
+}
 .sec-our-partner .slick-next:before {
   content: url("/src/assets/svg/partnernextarrow.svg");
 }
@@ -281,20 +291,12 @@
   border-radius: 5px;
 }
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-  right: 1%;
-  width: 223px;
+  fill: #faca10;
+  stroke: #faca10;
 }
-.yellowarrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
-  right: 1%;
-  width: 223px;
+.arrow-2 {
+  fill: #f7f7f7;
+  stroke: #f7f7f7;
 }
 .tasks-info-box-bg {
   background: #ffffff;
@@ -771,6 +773,10 @@
   border: none;
   width: 250px;
   border-bottom: 2px solid #a5a5a5 !important;
+  outline: none;
+}
+::placeholder {
+  color: #1e1e1e;
 }
 .hr-line-2 {
   max-width: 352px;
@@ -824,8 +830,11 @@
   transform: translateX(-50%);
   animation: fill 0.4s forwards;
 }
+.social-logo svg path {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
 .social-logo {
-  transition: 3s ease-in-out;
   cursor: pointer;
 }
 .social-logo:hover svg path {
@@ -878,13 +887,15 @@
   }
   .profilebg {
     position: absolute;
-    left: 38%;
-    transform: translateX(1%);
+    left: 42%;
     top: 1%;
   }
   .our-testimonial-para {
     max-width: 750px;
     margin-right: 90px;
+  }
+  .doublecomma {
+    left: 52%;
   }
 }
 @media (min-width: 768px) {
@@ -925,11 +936,11 @@
     width: 250px;
   }
   .form-select {
-    width: 250 !important;
+    min-width: 250px !important;
   }
   .profilebg {
     position: absolute;
-    left: 25%;
+    left: 27%;
     transform: translateX(1%);
     top: 1%;
   }
@@ -996,8 +1007,8 @@
 
 @media (min-width: 1200px) {
   .heroimg {
-    max-width: 700px;
-    top: 18%;
+    max-width: 710px;
+    top: 0%;
     right: 0%;
     transform: translateX(11px);
   }
@@ -1085,15 +1096,15 @@
   }
   .profilebg {
     position: absolute;
-    left: 26%;
+    left: 22%;
     top: 1%;
   }
 }
 @media (min-width: 1400px) {
   .heroimg {
-    max-width: 852px;
+    max-width: 947px;
     right: 0%;
-    top: 15%;
+    top: 12%;
     transform: translateX(11px);
   }
   .text-bg-color {
@@ -1121,7 +1132,7 @@
   }
   .profilebg {
     position: absolute;
-    left: 30%;
+    left: 22%;
     top: 1%;
   }
 }
@@ -1134,5 +1145,10 @@
   }
   .hero-sec-container {
     position: relative;
+  }
+  .profilebg {
+    position: absolute;
+    left: 22%;
+    top: 1%;
   }
 }

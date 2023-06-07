@@ -16,24 +16,36 @@ const GetInTouch = () => {
               <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
                 Name
               </label>
-              <input className="form-input mx-auto" type="text" />
+              <input
+                className="form-input mx-auto ff-nunito fw-bold fs-xsm"
+                type="text"
+                placeholder="Lorem Ipusum"
+              />
             </div>
-            <div className="d-flex flex-column mt-5 mt-sm-0">
-              <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
+            <div className="d-flex flex-column mt-4 mt-sm-0">
+              <label className="ff-nunito fs-14 color-grey" htmlFor="Email">
                 Email
               </label>
-              <input className="form-input" type="text" />
+              <input
+                className="form-input ff-nunito fw-bold fs-xsm"
+                type="mail"
+                placeholder="LoremIpusum@mail.com"
+              />
             </div>
           </div>
-          <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between mt-5 pt-sm-3">
+          <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between mt-4 pt-sm-3">
             <div className="d-flex flex-column">
-              <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
+              <label className="ff-nunito fs-14 color-grey " htmlFor="Name">
                 Phone
               </label>
-              <input className="form-input" type="text" />
+              <input
+                className="form-input ff-nunito fw-bold fs-xsm"
+                type="number"
+                placeholder="+0 968 856 1524"
+              />
             </div>
             <div className="d-flex flex-column">
-              <div className="d-flex flex-column mt-5 mt-sm-0">
+              <div className="d-flex flex-column mt-4 mt-sm-0">
                 <label className="ff-nunito fs-14 color-grey" htmlFor="Name">
                   Subject
                 </label>
@@ -48,7 +60,7 @@ const GetInTouch = () => {
               <div className="hr-line-2"></div>
             </div>
           </div>
-          <div className="text-center mt-5 pt-4">
+          <div className="text-center mt-5">
             <button className="btn-yellow ff-nunito fw-bold">Submit</button>
           </div>
         </div>
