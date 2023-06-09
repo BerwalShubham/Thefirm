@@ -592,7 +592,7 @@
   background: #fffcf0;
 }
 .sec-our-research .slick-list {
-  padding: 0 0 0 48px !important;
+  padding: 0 !important;
 }
 .sec-our-research-yellow-cicle {
   transform: translate(-32%, -43%);
@@ -689,6 +689,13 @@
   margin: 0;
   padding: 46px !important;
 }
+.sec-testimonial .slider-2 .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 46px 0 !important;
+}
 .sec-testimonial .slick-center + .slick-active {
   transform: scale(1.4);
 }
@@ -719,8 +726,7 @@
   display: block !important;
 }
 .our-testimonial-para {
-  max-width: 350px;
-  padding-right: 50px;
+  width: 100%;
 }
 .vr-line {
   height: 19px;
@@ -730,7 +736,7 @@
 }
 .sec-testimonial .slick-dots li button:before {
   font-family: "slick";
-  font-size: 10px;
+  font-size: 18px;
   line-height: 20px;
   position: absolute;
   top: 0;
@@ -922,7 +928,8 @@
     margin-right: 90px;
   }
   .doublecomma {
-    left: 52%;
+    left: 54%;
+    top: 72%;
   }
 }
 @media (min-width: 768px) {

@@ -23,7 +23,7 @@ const OurReasearch = () => {
           slidesToShow: 1,
           infinite: true,
           speed: 1000,
-          autoplay: true,
+          autoplay: false,
           arrows: false,
         },
       },
@@ -46,8 +46,8 @@ const OurReasearch = () => {
           </p>
         </div>
         <Slider {...settings} className="mt-5 pt-lg-5">
-          <div className="row text-center text-lg-start flex-column-reverse flex-xl-row research px-md-5 ms-lg-1">
-            <div className="col-xl-6 pt-5">
+          <div className="row align-items-center text-center text-lg-start flex-column-reverse flex-xl-row research px-md-5 ms-lg-1">
+            <div className="col-xl-6">
               <h3 className="ff-nunito fw-bold fs-md">Lorem Ipsum is simply</h3>
               <p className="ff-lora fs-xsm pt-2 pe-lg-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -69,7 +69,7 @@ const OurReasearch = () => {
               <div className="sec-our-research-yellow-cicle d-none d-xl-block"></div>
             </div>
           </div>
-          <div className="row text-center text-lg-start research flex-column-reverse flex-xl-row align-items-center px-lg-5 ms-1">
+          <div className="row align-items-center text-center text-lg-start research flex-column-reverse flex-xl-row align-items-center px-lg-5 ms-1">
             <div className="col-xl-6">
               <h3 className="ff-nunito fw-bold fs-md">Lorem Ipsum is simply</h3>
               <p className="ff-lora fs-xsm pt-2 pe-lg-5">
